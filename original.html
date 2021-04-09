@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="cart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<title>Bun Bun Bake Shop</title>
+	</head>
+	<body id="menu">
+    <!-- nav bar -->
+		<div class="homepage">
+		    <ul>
+		    	<li style="float:left"><a href="index.html"><img src="logo.png" alt="logo" style="padding-left:40px; padding-bottom: 10px; height:35px;"></a></li>
+		    	<li><a href="cart.html">CART (<span id="count"></span>)</a></li>
+		    	<li><a href="contact.html">CONTACT</a></li>
+		    	<li><a href="menu.html">MENU</a></li>
+		    	<li><a href="about.html">ABOUT</a></li>
+		    </ul>
+
+      <!-- product image -->
+			<div class="container">
+	    		<img src="originaldetail.png" alt="originaldetail" style="height:690px;">
+	    		
+  				<div class="top-left">
+  					<a href="menu.html" style="color:white">⪡ GO BACK TO MENU</a>
+  				</div>
+
+          <!-- description -->
+  				<div class="details">
+  					<h5 style="display:inline">Original</h5> 
+            <span style="text-align:right">$4.00</span> <br>
+  					<p1>DESCRIPTION</p1> <br>
+  					<p2>The roll. That superior flavor and unmistakable, far-reaching aroma. Combined with our <br> smooth, tender dough and fluffy signature frosting, this isn’t your average cinnamon roll.</p2>
+  					<br><br>
+  					<p2>The Original cinnamon bun contains butter, sugar, salt, milk, ground cinnamon, egg, <br>vanilla extract, yeast, and all-purpose flour.
+  					</p2>
+  					
+            <!-- pick glaze -->
+  					<br><br>
+  					<p1>1. PICK GLAZE</p1>
+  					<br><br>
+  					<choice type="button" id="none" onclick="glaze1()">NONE</choice> 
+            <choice type="button" id="sugarmilk" onclick="glaze2()">SUGAR MILK</choice> 
+            <choice type="button" id="vanillamilk" onclick="glaze3()">VANILLA MILK</choice> 
+            <choice type="button" id="doublechoco" onclick="glaze4()">DOUBLE CHOCO</choice>
+  					
+            <!-- pick quantity -->
+  					<br><br>
+  					<p1>2. PICK QUANTITY</p1><br>
+
+        <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1</option>
+          <option value="3">3</option>
+          <option value="6">6</option>
+          <option value="12">12</option>
+        </select>
+
+        <br><br><br>
+        <label><b>TOTAL AMOUNT: $</b></label>
+        <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
+
+  				</div>
+
+          <!-- add to cart button -->
+        <button type="button" onclick="addtocart()">ADD TO CART</button>
+
+			</div>
+		</div>
+	</body>
+</html>

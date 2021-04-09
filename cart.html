@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="cart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<title>Bun Bun Bake Shop</title>
+	</head>
+	<body id="menu">
+		<div class="homepage">
+		    <ul>
+		    	<li style="float:left"><a href="index.html"><img src="logo.png" alt="logo" style="padding-left:40px; padding-bottom: 10px; height:35px;"></a></li>
+		    	<li><a href="cart.html">CART (<span id="count"></span>)</a></li>
+		    	<li><a href="contact.html">CONTACT</a></li>
+		    	<li><a href="menu.html">MENU</a></li>
+		        <li><a href="about.html">ABOUT</a></li>
+		    </ul>
+		    <p style="font-size:14px; text-align: left; padding-left: 155px; padding-top: 20px;">YOUR BAG</p>
+		    </div>
+<div class="shopping-cart">
+	<p style="font-size:14px; text-align: left; padding-left: 155px; padding-top: 15px; padding-bottom: 15px; word-spacing: 300px;">PRODUCT QUANTITY PRICE</p>
+	<hr style="border:0.5px;">
+ 
+	  <!-- Product #1 -->
+	<div class="item">
+	    <div class="buttons">
+	      <span class="delete-btn" onclick="removeItem()"></span>
+	    </div>
+	 
+	    <div class="image">
+	      <img src="original.png" alt="original" style="height:100px;">
+	    </div>
+	 
+	    <div class="description">
+	      <span>Original</span>
+	      <span>No Glaze</span>
+	    </div>
+	 
+	    <div class="quantity">
+	      <span>3</span>
+	    </div>
+	 
+	    <div class="price">$4.00
+	    </div>
+	</div>
+	 
+	  <!-- Product #2 -->
+	<div class="item">
+	    <div class="buttons">
+	      <span class="delete-btn" onclick="removeItem()"></span>
+	    </div>
+	 
+	    <div class="image">
+	      <img src="original.png" alt="original" style="height:100px;">
+	    </div>
+	 
+	    <div class="description">
+	      <span>Original</span>
+	      <span>Vanilla Milk</span>
+	    </div>
+	 
+	    <div class="quantity">
+	      <span>6</span>
+	    </div>
+	 
+	    <div class="price">$4.00</div>
+	</div>
+
+	  <!-- total price -->
+	<p3>Total: $36.00</p3>
+		
+	</div>
+
+	<checkoutbutton type="button">
+		&emsp; &emsp; &nbsp; Checkout
+	</checkoutbutton></a>
+	</body>
+</html>
